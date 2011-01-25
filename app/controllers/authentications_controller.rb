@@ -37,9 +37,17 @@ class AuthenticationsController < ApplicationController
           newuser = Authentication.new
           newuser.username = params[:username]
           newuser.password = params[:password]
-          newuser.save
-          redirecttohome
-          return
+          if newuser.save
+            session[:currentuser] = newuser
+            redirecttohome
+            return
+          else
+            @error = "Please input values properly!"
+            @authentication = Authentication.new
+            @authentication.username = params[:username]
+            render :register
+            return
+          end
         end
       end
       @error = "Username already exists!"
