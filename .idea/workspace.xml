@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f69856-4421-4592-9841-4bdedae1ed2d" name="Default" comment="" />
+    <list default="true" id="31f69856-4421-4592-9841-4bdedae1ed2d" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Santhosh\Desktop\MyWorks\S3FileManager\.gems" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/S3FileManager.iml" afterPath="$PROJECT_DIR$/.idea/S3FileManager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+    </list>
     <ignored path="S3FileManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +31,17 @@
     <fileColor scope="Non-Project Files" color="ffffe4" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="1" selection-start="151" selection-end="151" vertical-scroll-proportion="0.18543956">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -35,6 +51,25 @@
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
   </component>
+  <component name="Git.Branch.Configurations">
+    <option name="CURRENT" value="master" />
+    <option name="CONFIGURATIONS">
+      <array>
+        <BranchConfiguration>
+          <option name="IS_AUTO_DETECTED" value="true" />
+          <option name="NAME" value="master" />
+          <option name="BRANCHES">
+            <array>
+              <BranchInfo>
+                <option name="ROOT" value="$PROJECT_DIR$" />
+                <option name="REFERENCE" value="master" />
+              </BranchInfo>
+            </array>
+          </option>
+        </BranchConfiguration>
+      </array>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="GIT_EXECUTABLE" value="C:\Program Files (x86)\Git\bin\git.exe" />
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
@@ -43,8 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/testupload_controller.rb" />
-        <option value="$USER_HOME$/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/aws-s3-0.6.2/lib/aws/s3/service.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/file_list.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/javascripts/upload.js" />
@@ -59,6 +92,8 @@
         <option value="$PROJECT_DIR$/app/controllers/file_list_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
+        <option value="$PROJECT_DIR$/.gems" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -95,9 +130,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -106,19 +139,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S3FileManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S3FileManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Rails.Development: S3FileManager">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -239,13 +284,6 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -270,6 +308,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -414,13 +459,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18053597" sideWeight="0.6821192" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16854724" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3178808" sideWeight="0.999185" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,114 +511,79 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/s3_upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3684211">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.4.4.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.quicksearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.030737706">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="52" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.5081967">
-          <folding />
-        </state>
+        <state line="58" column="52" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.5081967" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/UserInteractions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.highlight-3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="35" selection-start="507" selection-end="516" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="35" selection-start="507" selection-end="516" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="568" column="17" selection-start="12835" selection-end="12835" vertical-scroll-proportion="0.66188526">
-          <folding />
-        </state>
+        <state line="568" column="17" selection-start="12835" selection-end="12835" vertical-scroll-proportion="0.66188526" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/file_list/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="94" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.5654102">
-          <folding />
-        </state>
+        <state line="54" column="94" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.5654102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="614" selection-end="614" vertical-scroll-proportion="0.030737706">
-          <folding />
-        </state>
+        <state line="22" column="36" selection-start="614" selection-end="614" vertical-scroll-proportion="0.030737706" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/upload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.67622954">
-          <folding />
-        </state>
+        <state line="22" column="36" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.67622954" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/file_list/upload.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="33" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-1.4944568">
-          <folding />
-        </state>
+        <state line="49" column="33" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-1.4944568" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="830" selection-end="830" vertical-scroll-proportion="0.15368852">
-          <folding />
-        </state>
+        <state line="29" column="39" selection-start="830" selection-end="830" vertical-scroll-proportion="0.15368852" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="89" selection-end="89" vertical-scroll-proportion="0.09221312">
-          <folding />
-        </state>
+        <state line="3" column="15" selection-start="89" selection-end="89" vertical-scroll-proportion="0.09221312" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/file_list_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="360" selection-end="360" vertical-scroll-proportion="0.4918033">
-          <folding />
-        </state>
+        <state line="16" column="4" selection-start="360" selection-end="360" vertical-scroll-proportion="0.4918033" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/s3_uploads_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="399" selection-end="399" vertical-scroll-proportion="0.32967034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="151" selection-end="151" vertical-scroll-proportion="0.18543956">
           <folding />
         </state>
       </provider>

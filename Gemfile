@@ -7,7 +7,7 @@ gem 'pg'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 's3_swf_upload', :git => 'git://github.com/nathancolgate/s3-swf-upload-plugin'
 gem 'aws-s3', :require => 'aws/s3'
