@@ -1,5 +1,4 @@
 class AuthenticationsController < ApplicationController
-
   # GET /authentications/new
   # GET /authentications/new.xml
   def new
@@ -56,9 +55,7 @@ class AuthenticationsController < ApplicationController
       render :register
   end
 
-
   def redirecttohome
-    redirect_to :controller => "file_list"
+    redirect_to dashboard_url
   end
-
 end

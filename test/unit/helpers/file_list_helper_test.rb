@@ -1,4 +1,3 @@
-require 'test_helper'
-
+require "test_helper"
 class FileListHelperTest < ActionView::TestCase
 end

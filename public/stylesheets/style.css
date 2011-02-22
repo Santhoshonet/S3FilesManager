@@ -1,3 +1,9 @@
+/* Table of contents */
+/*
+	1.0 Global Styles
+	2.0 Header
+*/
+
 /*
 Color Scheme
 
@@ -9,22 +15,25 @@ Red: FF1300
 Green: 00DF27
 Yellow: FFF700
 
+*/
 
-  HTML5 ✰ Boilerplate 
-  
-  style.css contains a reset, font normalization and some base styles.
-  
-  credit is left where credit is due.
-  much inspiration was taken from these projects:
-    yui.yahooapis.com/2.8.1/build/base/base.css
-    camendesign.com/design/
-    praegnanz.de/weblog/htmlcssjs-kickstart
+/*
+
+	HTML5 ✰ Boilerplate
+
+	style.css contains a reset, font normalization and some base styles.
+
+	credit is left where credit is due.
+	much inspiration was taken from these projects:
+		yui.yahooapis.com/2.8.1/build/base/base.css
+		camendesign.com/design/
+		praegnanz.de/weblog/htmlcssjs-kickstart
 */
 
 /* 
-  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
-  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
-  html5doctor.com/html-5-reset-stylesheet/
+	html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+	v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+	html5doctor.com/html-5-reset-stylesheet/
 */
 
 html, body, div, span, object, iframe,
@@ -39,18 +48,18 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
 }                  
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { 
-    display:block;
+		display:block;
 }
 
 nav ul { list-style:none; }
@@ -81,12 +90,12 @@ input, select { vertical-align:middle; }
 
 
 /* fonts.css from the YUI Library: developer.yahoo.com/yui/
-   Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
+	 Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
 
-  There are three custom edits:
-   * remove arial, helvetica from explicit font stack
-   * we normalize monospace styles ourselves
-   * table font-size is reset in the HTML5 reset above so there is no need to repeat
+	There are three custom edits:
+	 * remove arial, helvetica from explicit font stack
+	 * we normalize monospace styles ourselves
+	 * table font-size is reset in the HTML5 reset above so there is no need to repeat
 */
 body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
 
@@ -96,7 +105,7 @@ select, input, textarea, button { font:99% sans-serif; }
  * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
  */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
- 
+
 
 /* 
  * minimal base styles 
@@ -104,20 +113,20 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 body, select, input, textarea { 
-  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
-  color: #444; 
-  /* set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */   
+	/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+	color: #444;
+	/* set your base font here, to apply evenly */
+	/* font-family: Georgia, serif;  */
 }
 
 /* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
+	 you'll want to define those yourself. */
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 /* always force a scrollbar in non-IE */ 
 html { overflow-y: scroll; }
 
- 
+
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
@@ -140,22 +149,22 @@ sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
 
 pre { 
-  padding: 15px; 
-  
-  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
-  white-space: pre; /* CSS2 */
-  white-space: pre-wrap; /* CSS 2.1 */
-  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word; /* IE */
+	padding: 15px;
+
+	/* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
 }
- 
+
 
 textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
 
 .ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
 
 /* align checkboxes, radios, text inputs with their label
-   by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+	 by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
@@ -163,37 +172,37 @@ input[type="checkbox"] { vertical-align: bottom; }
 
 /* hand cursor on clickable input elements */
 label, input[type=button], input[type=submit], button { cursor: pointer; }
- 
+
 /* webkit browsers add a 2px margin outside the chrome of form elements */  
 button, input, select, textarea { margin: 0; }
 
 /* colors for form validity */
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { 
-      border-radius: 1px;
-    -moz-box-shadow: 0px 0px 5px red; 
+			border-radius: 1px;
+		-moz-box-shadow: 0px 0px 5px red;
  -webkit-box-shadow: 0px 0px 5px red; 
-         box-shadow: 0px 0px 5px red;
+				 box-shadow: 0px 0px 5px red;
 }
 .no-boxshadow input:invalid, 
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
 /* These selection declarations have to be separate.
-   No text-shadow: twitter.com/miketaylr/status/12228805301 
-   Also: hot pink. */
+	 No text-shadow: twitter.com/miketaylr/status/12228805301
+	 Also: hot pink. */
 ::-moz-selection{ background: #00a6cb; color:#fff; text-shadow: none; }
 ::selection { background:#00a6cb; color:#fff; text-shadow: none; } 
 
 /*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
+a:link { -webkit-tap-highlight-color: #00a6cb; } 
 
 /* make buttons play nice in IE:    
-   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+	 www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
- 
+
 /* bicubic resizing for non-native sized IMG: 
-   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+	 code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
@@ -206,21 +215,21 @@ button {  width: auto; overflow: visible; }
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
 /* Hide for both screenreaders and browsers
-   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+	 css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display: none; visibility: hidden; } 
 
 /* Hide only visually, but have it available for screenreaders 
-   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+	 www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
 .visuallyhidden { position: absolute !important;    
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px); }
 
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
 .clearfix:before, .clearfix:after {
-  content: "\0020"; display: block; height: 0; visibility: hidden;	
+	content: "\0020"; display: block; height: 0; visibility: hidden;
 } 
 
 .clearfix:after { clear: both; }
@@ -230,12 +239,15 @@ button {  width: auto; overflow: visible; }
 
 
 /*Primary Styles
-Author: Prashant
- 
-Common Styles*/
+Author: Prashant Angyan
+*/
+
+/* 1.0 Global Styles */
+
+/* 1.1 Type */
 BODY
 {
-	/*background: url(../images/1.jpg) repeat;*/
+	/* background: url(../images/bg.jpg) repeat; */
 	font: 1em Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.3em;
@@ -258,13 +270,18 @@ h2
 {
 	font-size:1.8em;
 	margin-bottom: 20px;
+  text-transform:uppercase;
 }
 h3
 {
-	font-size:1.5em;
+	font-size:1.4em;
 	margin-bottom: 20px;
+  padding-bottom:10px;
+  border-bottom:#c9c9c9 6px solid;
 }
-/*Button*/
+
+/* 1.2 Button */
+
 a.gradient-button, .gradient-button:visited
 {
 	margin-top:-5px;
@@ -288,13 +305,9 @@ a.gradient-button, .gradient-button:visited
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	border-bottom: 1px solid rgba(0,0,0,0.25);
 }
-a.gradient-button:hover
-{
-	background-color: #006e87; 
-}
 a.gradient-button:active
-{ 
-	top: 1px; 
+{
+	top: 1px;
 }
 /*Button sizes*/
 .small.gradient-button
@@ -306,10 +319,26 @@ a.gradient-button:active
 {
 	background-color:#00A6CB;
 }
+a.blue.gradient-button:hover
+{
+	background-color: #006e87;
+}
+.orange.gradient-button
+{
+	background-color:#ff7f00;
+}
+a.orange.gradient-button:hover
+{
+	background-color: #dd6e00;
+}
 /*Button Positions*/
 h2 span a
 {
 	font-size:2em;
+	float:right;
+}
+h3 span a
+{
 	float:right;
 }
 .title-button
@@ -321,6 +350,141 @@ span.menu-button
 	font-size:.6em;
 }
 
+/* 2.0 Header */
+.header
+{
+	padding: 10px;
+  background:#00A6CB;
+}
+.header img
+{
+}
+
+/* 2.1 Main navigation */
+.header ul
+{
+  background:#00A6CB;
+  color:#fff;
+  list-style:none;
+  margin:0;
+  padding:5px 0 10px 0;
+  font-weight:bold;
+  float:right;
+  font-size:.8em;
+}
+
+.header ul li
+{
+  display:inline;
+}
+.header ul li a
+{
+  color:#fff;
+  text-decoration:none;
+  padding:10px;
+}
+.header ul li a.selected
+{
+  background:#007c98;
+  color:#fff;
+  text-decoration:none;
+  -moz-box-shadow:inset 0 0 10px #006176;
+  -webkit-box-shadow:inset 0 0 10px #006176;
+  box-shadow:inset 0 0 10px #006176;
+}
+.header ul li a:hover
+{
+  background:#007c98;
+  color:#fff;
+  text-decoration:none;
+  -moz-box-shadow:inset 0 0 10px #006176;
+  -webkit-box-shadow:inset 0 0 10px #006176;
+  box-shadow:inset 0 0 10px #006176;
+}
+
+/* 3.0 Body */
+.container
+{
+	margin: 0 auto;
+	width: 960px;
+}
+/* 3.1 Content */
+.content
+{
+	padding:10px;
+}
+
+
+/* 4.0 Dashboard Page */
+/* 4.1 Project list */
+.project-list
+{
+  float:left;
+  width:48%;
+  margin-right:2%;
+}
+.project-list ul
+{
+  padding:0px;
+  margin:0px;
+  list-style:none;
+}
+.project-list ul li
+{
+  padding:5px 0 5px 0;
+  border-bottom:#c9c9c9 1px solid;
+}
+.project-list ul.sub-items  li
+{
+  font-size:.8em;
+  display:inline;
+  border:none;
+}
+/* 4.2 Activity list */
+.activity-stream
+{
+  float:left;
+  width:48%;
+  margin-left:2%;
+}
+
+/* 5.0 File List */
+.file-list
+{
+  
+}
+
+.file-list ul
+{
+  list-style:none;
+  margin:0;
+}
+.file-list ul li
+{
+  margin-bottom:10px;
+}
+/* Todo: See if there is a better way of position the image without using negative margins */
+.file-list ul li img
+{
+  margin-bottom:-4px;
+  margin-right:5px;
+}
+.file-list ul.file-menu
+{
+  list-style:none;
+}
+.file-list ul.file-menu li
+{
+  display:inline;
+  font-size:.8em;
+}
+/*5.1 Filter */
+.filter
+{
+  background:url("../images/texture.jpg");
+  padding:10px;
+  margin-bottom:10px;
+}
 /*Login page
 Centering code taken from http://perishablepress.com/press/2007/09/25/absolute-horizontal-and-vertical-centering-via-css*/
 DIV#login-box-container
@@ -396,151 +560,29 @@ DIV#login-box .error-fieldset P
 	color: #FF1300;
 }
 
-
-/*Content styling for sub pages*/
-.container
-{
-	margin: 0 auto;
-	width: 960px;
-}
-.header-container
-{
-	margin-top: 10px;
-	padding: 10px;
-	background: #FFF;
-	border: 1px solid #EDEDED;
-	-moz-box-shadow: 3px 3px 5px #ECECEC;
-	-webkit-box-shadow: 3px 3px 5px #ECECEC;
-	box-shadow: 3px 3px 5px #ECECEC;
-}
-.header-container #search
-{
-	float: right;
-}
-
-.nav
-{
-	padding:10px;
-}
-.nav ul
-{
-	list-style:none;
-	margin:10px 0 0 0;
-	padding:0px;
-}
-.nav li
-{
-	display:inline;
-	font-weight:bold;
-	padding-right:10px;
-}
-
-.nav li a:link
-{
-	text-decoration:none;
-	background:#00A6CB;
-	color:#fff;
-	padding:5px;	
-}
-.nav li a:hover
-{
-	background:#fff;
-	color:#00A6CB;
-	border-bottom:1px solid #fff;
-}
-.nav li a.selected
-{
-	text-decoration:none;
-	background:#FFF;
-	color:#00A6CB;
-	padding:5px;
-	border-bottom:1px solid #fff;
-}
-
-/*Content*/
-.content-container
-{
-	background:#fff;
-	margin-top:-6px;
-	/*
-	border: 1px solid #EDEDED;
-	-moz-box-shadow: 3px 3px 5px #c9c9c9
-	-webkit-box-shadow: 3px 3px 5px #C9C9C9;
-	box-shadow: 3px 3px 5px #c9c9c9
-	*/
-}
-.content
-{
-	padding:10px;
-}
-.content table
-{
-	width:800px;
-	text-align:left;
-	float:left;
-	margin-right:10px;
-}
-.content table th
-{
-	background:#dcf9ff;
-	padding:5px;
-}
-.content table td
-{
-	padding:5px;
-	vertical-align:middle;
-}
-.content table tr:hover
-{
-	background:#fed;
-}
-.content table td .File-Status-Info
-{
-	display:block;
-	color:#c9c9c9;
-	font-size:.8em;
-}
-.content table tr:nth-of-type(odd) 
-{
-  background-color:#dcf9ff;
-}
-.content table tr:nth-of-type(odd):hover
-{
-  background-color:#fed;
-}
-
-.content .right-options
-{
-	float:right;
-}
-.content .left-content
-{
-	float:left;
-}
-
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 
  */
 
 @media all and (orientation:portrait) { 
-  /* Style adjustments for portrait mode goes here */
-  
+	/* Style adjustments for portrait mode goes here */
+
 }
 
 @media all and (orientation:landscape) { 
-  /* Style adjustments for landscape mode goes here */
-  
+	/* Style adjustments for landscape mode goes here */
+
 }
 
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
-   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+	 Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-  
-  
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
-     j.mp/textsizeadjust 
-  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+
+
+	/* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+		 j.mp/textsizeadjust
+	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
 /* 
@@ -548,27 +590,16 @@ DIV#login-box .error-fieldset P
  * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
  */
 @media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a:after { content: " (" attr(href) ")"; } 
-  abbr:after { content: " (" attr(title) ")"; }
-  .ir a:after { content: ""; }  /* Don't show links for images */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+	* { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+	a, a:visited { color: #444 !important; text-decoration: underline; }
+	a:after { content: " (" attr(href) ")"; }
+	abbr:after { content: " (" attr(title) ")"; }
+	.ir a:after { content: ""; }  /* Don't show links for images */
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+	tr, img { page-break-inside: avoid; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3{ page-break-after: avoid; }
 }
 
-
-
-tr#noresultsrow
-{
-    color:#94b9a4;
-    display:none;
-}
-.highlight
-{
-    color:#fe9093;
-}

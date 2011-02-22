@@ -35,6 +35,12 @@
       </requirement>
       <source from="Gemfile" />
     </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="test-unit" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -73,6 +79,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.9.0, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/pg-0.9.0-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] test-unit (v2.1.2, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/test-unit-2.1.2)" level="application" />
   </component>
 </module>
 

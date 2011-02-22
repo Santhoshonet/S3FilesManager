@@ -1,7 +1,7 @@
 require 'base64'
 
 class S3UploadsController < ApplicationController
-
+                              before_filter :isuserloggedin
   # You might want to look at https and expiration_date below.
   #        Possibly these should also be configurable from S3Config...
 
@@ -33,13 +33,8 @@ class S3UploadsController < ApplicationController
     ]
 }").gsub(/\n|\r/, '')
 
-
-
     #signature = b64_hmac_sha1(secret_key, policy)
-
     signature = Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), secret_key, policy)).gsub("\n","")
-
-
     respond_to do |format|
       format.xml {
         render :xml => {

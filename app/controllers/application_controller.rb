@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
       redirect_to :controller => "authentications", :action => "new"
       return false
      end
-     return true
+      true
    end
 end

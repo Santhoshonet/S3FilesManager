@@ -1,14 +1,7 @@
-require 'test_helper'
-
+require "test_helper"
 class AuthenticationsControllerTest < ActionController::TestCase
-  setup do
-    @authentication = authentications(:one)
-  end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:authentications)
+  setup do
   end
 
   test "should get new" do
@@ -17,33 +10,51 @@ class AuthenticationsControllerTest < ActionController::TestCase
   end
 
   test "should create authentication" do
-    assert_difference('Authentication.count') do
-      post :create, :authentication => @authentication.attributes
-    end
+    # with invalid username and password
+    authentication = authentications(:one)
+    post :create, :authentication => authentication.attributes
+    assert_response :success
 
-    assert_redirected_to authentication_path(assigns(:authentication))
-  end
 
-  test "should show authentication" do
-    get :show, :id => @authentication.to_param
+    # with proper username and password
+    authentication = authentications(:two)
+
+
+    record = Authentication.new
+    record.username = authentication[:username]
+    record.password = authentication[:password]
+    record.save
+
+    post :create, :authentication => authentication.attributes
+   assert_response :success
+
+    #wtih empty password
+    authentication = authentications(:three)
+    post :create, :authentication => authentication.attributes
+     assert_response :success
+
+
+    #with empty username and password
+    authentication = authentications(:four)
+    post :create , :authentication => authentication.attributes
+    assert_response :success
+
+
+    #with nil username and password
+    authentication = authentications(:four)
+    post :create , :authentication => authentication.attributes
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, :id => @authentication.to_param
+  test "should get register" do
+    get :register
     assert_response :success
   end
 
-  test "should update authentication" do
-    put :update, :id => @authentication.to_param, :authentication => @authentication.attributes
-    assert_redirected_to authentication_path(assigns(:authentication))
+  test "should get createuser" do
+    authentication = authentications(:one)
+    post :create, :authentication => authentication.attributes
+    assert_response :success
   end
 
-  test "should destroy authentication" do
-    assert_difference('Authentication.count', -1) do
-      delete :destroy, :id => @authentication.to_param
-    end
-
-    assert_redirected_to authentications_path
-  end
 end

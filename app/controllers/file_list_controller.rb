@@ -2,21 +2,16 @@ require "aws/s3"
 class FileListController < ApplicationController
              before_filter :isuserloggedin
   def index
-
-    AWS::S3::Base.establish_connection!(
-      :access_key_id => "AKIAIW36YM46YELZCT3A",
-      :secret_access_key => "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"
-    )
-
-    @buckets = AWS::S3::Service.buckets(:reload)
-
+    unless params[:id].nil?
+        @project = params[:id]
+        session[:bucket_name] = @project
+        @bucket =  AWS::S3::Bucket.find(@project)
+    else
+        redirect_to :controller => "dashboard"
+    end
   end
 
   def upload
-
-
-
   end
-
 
 end

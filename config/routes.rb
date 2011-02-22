@@ -1,4 +1,8 @@
 S3FileManager::Application.routes.draw do
+  get "dashboard/index"
+
+  resources :projects
+
   get "file_list/index"
 
   resources :authentications
@@ -56,10 +60,13 @@ S3FileManager::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "testupload#index"
   #root :controller => "authentications", :action => "new"
-  root :controller => "file_list", :action => "index"
+  root :controller => "authentications", :action => "new"
   match '/register' , :controller => "authentications", :action => 'register'
   match '/createuser' , :controller => "authentications", :action => 'createuser'
+  match 'dashboard', :controller => "dashboard", :action => "index"
   match ':controller/:action'
+  match "filelist/:id", :controller => "file_list", :action => "index"
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
