@@ -4,36 +4,24 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @projects }
-    end
-  end
-
-  # GET /projects/1
-  # GET /projects/1.xml
-  def show
-    @project = Project.find(params[:id])
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @project }
+    @client_name = params[:id]
+    unless @client_name.nil?
+      client = Client.find_by_name(@client_name)
+      @projects = client.projects
+    else
+      redirect_to :controller => "clients"
     end
   end
 
   # GET /projects/new
   # GET /projects/new.xml
   def new
-    @project = Project.new
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @project }
+    @client_name = params[:id]
+    unless @client_name.nil?
+      client = Client.find_by_name(@client_name)
+      @project = client.projects.new
     end
-  end
-
-  # GET /projects/1/edit
-  def edit
-    @project = Project.find(params[:id])
+    render :layout => false
   end
 
   # POST /projects
@@ -42,45 +30,52 @@ class ProjectsController < ApplicationController
     @project = Project.new
     @project.name = params[:name]
     @project.description = params[:description]
+    @project.client_id = params[:client_id]
+#    @deleteproject = Project.find_all_by_name(@project.name)
+#    @deleteproject.each do |proj|
+#      proj.destroy
+#    end
     if @project.save
-        AWS::S3::Bucket.create("#{@project.name}")
         flash[:notice] = 'Project was successfully created.'
+        if ENV['RAILS_ENV'] != "test"
+          # getting the root folder first
+          unless exists_in_s3?(@project.name,S3SwfUpload::S3Config.bucket, {:folder => true} )
+            create_s3_folder(@project.name,S3SwfUpload::S3Config.bucket,{:folder => true})
+          end
+        end
+        redirect_to "/projectlist/" + @project.client.name
     else
-        flash[:notice] = 'Unable to create the project due to .' + @project.errors.full_messages[0].to_s
+
+        flash[:notice] = 'Unable to create the project due to ' + @project.errors.full_messages[0].to_s
+        redirect_to :controller => "clients"
     end
-    @buckets = AWS::S3::Service.buckets(:reload)
-    render :'file_list/index'
+
   end
 
   def status
-
   end
 
-  # PUT /projects/1
-  # PUT /projects/1.xml
-  def update
-    @project = Project.find(params[:id])
+  private
+  S3_FOLDER_EXT = '/'
+  def exists_in_s3?(file_name, bucket_name, options ={})
+    connect_to_s3
+    file_search_name = file_name.dup
+    file_search_name << S3_FOLDER_EXT if options[:folder]
+    AWS::S3::Bucket.objects(bucket_name, :prefix => file_search_name).any?
+  end
 
-    respond_to do |format|
-      if @project.update_attributes(params[:project])
-        format.html { redirect_to(@project, :notice => 'Project was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @project.errors, :status => :unprocessable_entity }
-      end
+  def create_s3_folder(file_name, bucket_name, options={})
+    connect_to_s3
+    folder = AWS::S3::S3Object.store(file_name + S3_FOLDER_EXT, '', bucket_name,
+      {:access => :public_read,
+       :content_type => "binary/octet-stream",
+       :cache_control => 'max-age=3600,post-check=900,pre-check=3600' }.update(options))
+  end
+
+  def connect_to_s3
+    unless AWS::S3::Base.connected?
+      AWS::S3::Base.establish_connection!(:access_key_id => S3SwfUpload::S3Config.access_key_id, :secret_access_key => S3SwfUpload::S3Config.secret_access_key)
     end
   end
 
-  # DELETE /projects/1
-  # DELETE /projects/1.xml
-  def destroy
-    @project = Project.find(params[:id])
-    @project.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(projects_url) }
-      format.xml  { head :ok }
-    end
-  end
 end

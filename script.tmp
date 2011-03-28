@@ -128,3 +128,10 @@ var readableBytes = function(bytes) {
 
 
 </div>
+
+
+
+<!--
+                        <a href='<%= #AWS::S3::S3Object.url_for(object.key,S3SwfUpload::S3Config.bucket,:authenticated => false) %> '><%= #object.key.split('/')[1] %></a>
+ -->
+<%= #image_tag "fileicons/" + File.extname(object.key).to_s[1..4] + ".png" %>

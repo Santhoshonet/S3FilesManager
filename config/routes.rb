@@ -1,13 +1,25 @@
 S3FileManager::Application.routes.draw do
-  get "dashboard/index"
 
-  resources :projects
+  get "history/index"
+
+  resources :comments
+
+  match 'file_list/upload', :controller => "file_list", :action => "upload"
+
+
+  resources :clients
+
+  get "dashboard/index"
 
   get "file_list/index"
 
   resources :authentications
 
   resources :s3_uploads
+
+  resources :projects
+
+  resources :file_list
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -60,12 +72,22 @@ S3FileManager::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "testupload#index"
   #root :controller => "authentications", :action => "new"
-  root :controller => "authentications", :action => "new"
+  root :controller => "clients" , :action => "index"
+
   match '/register' , :controller => "authentications", :action => 'register'
   match '/createuser' , :controller => "authentications", :action => 'createuser'
-  match 'dashboard', :controller => "dashboard", :action => "index"
+  match 'login', :controller => "authentications", :action => "new"
+  match 'forgotpassword', :controller => "authentications", :action => "forgotpassword"
+  match 'resetpassword/:id', :controller => "authentications", :action => "resetpassword"
+  match 'dashboard', :controller => "dashboard"
+  match 'clients', :controller => "clients"
+
+  match ':controller/:action/:id'
   match ':controller/:action'
   match "filelist/:id", :controller => "file_list", :action => "index"
+  match 'projectlist/:id', :controller => "projects", :action => "index"
+  match 'Commentlist/:id', :controller => "comments", :action => "index"
+  match 'histories/:id', :controller => "history", :action => "index"
 
   # See how all your routes lay out with "rake routes"
 

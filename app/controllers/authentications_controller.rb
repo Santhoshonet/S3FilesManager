@@ -4,20 +4,21 @@ class AuthenticationsController < ApplicationController
   def new
     @error = nil
     @authentication = Authentication.new
+    #if Authentication.find(:all).length > 0
+    #  session[:currentuser] = Authentication.find(:first)
+    #  redirecttohome
+    #  return
+    #end
   end
 
   # POST /authentications
   # POST /authentications.xml
   def create
     @error = nil
-    authentication = Authentication.find(:all,:conditions => "username = '#{params[:username]}'")
-      if authentication.count() > 0
-        if authentication[0].password == params[:password]
-            session[:currentuser] = authentication[0]
-            redirecttohome
-            return
-        end
-      end
+    if session[:currentuser] = Authentication.authenticate(params[:username], params[:password])
+      redirecttohome
+      return
+    end
       @error = "Invalid username or password entered!"
       @authentication = Authentication.new
       @authentication.username = params[:username]
@@ -30,32 +31,60 @@ class AuthenticationsController < ApplicationController
 
   def createuser
     @error = nil
-    authentication = Authentication.find(:all,:conditions => "username = '#{params[:username]}'")
-      unless authentication.nil?
-        if authentication.count() == 0
-          newuser = Authentication.new
-          newuser.username = params[:username]
-          newuser.password = params[:password]
-          if newuser.save
-            session[:currentuser] = newuser
-            redirecttohome
-            return
-          else
-            @error = "Please input values properly!"
-            @authentication = Authentication.new
-            @authentication.username = params[:username]
-            render :register
-            return
-          end
-        end
+    newuser = Authentication.new
+    newuser.username = params[:username]
+    newuser.password = params[:password]
+    if params[:password] == params[:confirm_password]
+      if newuser.save
+        session[:currentuser] = newuser.authenticate(params[:username],params[:password]).id
+        redirecttohome
+        return
+      else
+        @error = newuser.errors.full_messages
       end
-      @error = "Username already exists!"
-      @authentication = Authentication.new
-      @authentication.username = params[:username]
-      render :register
+    else
+      @error = "Confirmation password not matched!"
+    end
+    @authentication = Authentication.new
+    @authentication.username = params[:username]
+    render :register
   end
 
   def redirecttohome
-    redirect_to dashboard_url
+    #redirect_to dashboard_url
+    redirect_to clients_url
   end
+
+  def forgotpassword
+    unless params[:username].nil?
+      user = Authentication.find(:first, :conditions => "username = '#{params[:username]}'")
+      unless user.nil?
+        user.send_reset_password
+        @status = "An email has been send to you for resetting your getclaimed password."
+        render :success
+      else
+          @error = 'Invalid email address entered!'
+      end
+    end
+  end
+
+  def success
+  end
+
+  def resetpassword
+    @user = nil
+    unless params[:id].nil?
+      user = Authentication.find(:first, :conditions => "reset_code = '#{params[:id]}'")
+      unless user.nil?
+        @user = user
+      end
+    end
+  end
+
+  def setpassword
+    unless params[:password].nil? and params[:confirm_password].nil?
+
+    end
+  end
+
 end

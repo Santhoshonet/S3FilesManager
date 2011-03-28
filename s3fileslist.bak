@@ -139,3 +139,69 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+AWS::S3::Bucket.create("#{@project.name}")
+
+        # granting the permission to upload or download the files from the bucket.
+        @bucket =  AWS::S3::Bucket.find(@project.name)
+        @policy = @bucket.acl()
+
+        group = "AllUsers"
+
+        grant = AWS::S3::ACL::Grant.new
+        grant.permission= 'FULL_CONTROL'
+
+        grantee = AWS::S3::ACL::Grantee.new
+        grantee.group = group
+        grant.grantee = grantee
+
+        @policy.grants << grant
+
+        grant = AWS::S3::ACL::Grant.new
+        grant.permission= 'READ'
+
+        grantee = AWS::S3::ACL::Grantee.new
+        grantee.group = group
+        grant.grantee = grantee
+
+        @policy.grants << grant
+
+
+        grant = AWS::S3::ACL::Grant.new
+        grant.permission= 'WRITE'
+
+        grantee = AWS::S3::ACL::Grantee.new
+        grantee.group = group
+        grant.grantee = grantee
+
+        @policy.grants << grant
+
+
+        grant = AWS::S3::ACL::Grant.new
+        grant.permission= 'READ_ACP'
+
+        grantee = AWS::S3::ACL::Grantee.new
+        grantee.group = group
+        grant.grantee = grantee
+
+        @policy.grants << grant
+
+
+        grant = AWS::S3::ACL::Grant.new
+        grant.permission= 'WRITE_ACP'
+
+        grantee = AWS::S3::ACL::Grantee.new
+        grantee.group = group
+        grant.grantee = grantee
+
+        @policy.grants << grant
+
+        @bucket.acl(@policy)
+

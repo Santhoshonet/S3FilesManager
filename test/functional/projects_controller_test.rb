@@ -1,49 +1,55 @@
 require 'test_helper'
 
 class ProjectsControllerTest < ActionController::TestCase
+
   setup do
     @project = projects(:one)
   end
 
   test "should get index" do
     get :index
+    assert_redirected_to :controller => "clients"
+
+    get :index , :id => "MyString"
     assert_response :success
-    assert_not_nil assigns(:projects)
+
+    #assert_not_nil assigns(:projects)
   end
 
   test "should get new" do
-    get :new
+    get :new   , :id => "MyString"
     assert_response :success
+    #   #assert_not_nil(@project)
   end
 
   test "should create project" do
-    assert_difference('Project.count') do
-      post :create, :project => @project.attributes
-    end
+      # with valid project name
+      Project.all.each do |project|
+        project.destroy
+      end
 
-    assert_redirected_to project_path(assigns(:project))
+      Client.all.each do |client|
+        client.destroy
+      end
+
+      client = Client.new
+      client.name = "some test client"
+      client.description = "some description"
+      client.save
+
+      post :create, :name => projects(:one)[:name], :description => projects(:one)[:description], :client_id => Client.find(:first).id
+      assert_redirected_to "/projectlist/some test client"
+      #assert_equal(flash[:notice], "Project was successfully created.")
+
+      # with nil values
+      post :create, :name => nil, :description => nil, :client_id => Client.find(:first).id
+      assert_redirected_to :controller => "clients"
+      #assert_not_equal(flash[:notice], "Project was successfully created.")
+
+      #with duplicate project name
+      post :create, :name => nil, :description => nil, :client_id => Client.find(:first).id
+      assert_redirected_to :controller => "clients"
+      #assert_not_equal(flash[:notice],"Project was successfully created.")
   end
 
-  test "should show project" do
-    get :show, :id => @project.to_param
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => @project.to_param
-    assert_response :success
-  end
-
-  test "should update project" do
-    put :update, :id => @project.to_param, :project => @project.attributes
-    assert_redirected_to project_path(assigns(:project))
-  end
-
-  test "should destroy project" do
-    assert_difference('Project.count', -1) do
-      delete :destroy, :id => @project.to_param
-    end
-
-    assert_redirected_to projects_path
-  end
 end

@@ -1,21 +1,13 @@
-<div id="login-box">
-    <%= form_for(@project) do |f| %>
-        <div class="error">
-		    <p></p>
-        </div>
-		<!-- Add class="error-fieldset" to the fieldset tag in case there is an error, this class has to be added to any fieldset that has an error -->
-		<fieldset>
-		    <label>Project name</label>
-            <input type="text" class="login-text" name="name" maxlength="100" id="txtprojectname" />
-			<!-- Message to be shown below the filed which has a problem <p>Improper email format</p> -->
-        </fieldset>
-		<fieldset>
-		    <label>Description</label>
-            <textarea rows="" cols="" name="description" class="login-text"></textarea>
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="Create project" id="btnsubmit">
-        </fieldset>
+<div class="content">
+    <%= form_for(@project, :html => {:class => "popup"} ) do |f| %>
+        <% unless @error.nil? %>
+		<div class="error">
+		    <p><%= @error %></p>
+	    </div>
+        <% end %>
+        Project Name
+        <input type="text" name="name" class="single-line" />
+        <span class="menu-button"><a onclick="document.forms[0].submit();" href="#" class="small blue gradient-button">Add new project</a></span>
+        <input type="hidden" value="<%= @project.client_id %>" name="client_id" >
     <% end %>
 </div>
-

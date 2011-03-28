@@ -1,13 +1,10 @@
 require 'base64'
-
 class S3UploadsController < ApplicationController
                               before_filter :isuserloggedin
   # You might want to look at https and expiration_date below.
   #        Possibly these should also be configurable from S3Config...
-
   skip_before_filter :verify_authenticity_token
   include S3SwfUpload::Signature
-  
   def index
     bucket          = S3SwfUpload::S3Config.bucket
     access_key_id   = S3SwfUpload::S3Config.access_key_id
@@ -18,7 +15,6 @@ class S3UploadsController < ApplicationController
     https           = 'false'
     error_message   = ''
     expiration_date = 1.hours.from_now.utc.strftime('%Y-%m-%dT%H:%M:%S.000Z')
-
     policy = Base64.encode64(
 "{
     'expiration': '#{expiration_date}',
@@ -49,5 +45,28 @@ class S3UploadsController < ApplicationController
         }.to_xml
       }
     end
+
+    categoryname = "userstories"
+    category = Category.find_by_name(categoryname)
+    if category.nil?
+      category = Category.new
+      category.name = categoryname
+      category.save
+    end
+    project = Project.find_by_name(session[:project_name])
+    document = Document.find_by_name(key)
+    if document.nil?
+      document = Document.new
+      document.project = project
+      document.project_id = project.id
+      document.category = category
+      document.category_id = category.id
+      document.name = key
+      document.save
+      document.addhistory_new(session[:currentuser])
+    else
+      document.addhistory_version(session[:currentuser])
+    end
+
   end
 end

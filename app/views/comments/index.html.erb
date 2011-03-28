@@ -1,0 +1,19 @@
+<div class="content">
+    <h2>Comments</h2>
+    <h3><%= @document.name.split("/")[1] %><span class="menu-button"><a href="/comments/new/<%= @document.id %>" class="small orange gradient-button" title="">+ Add Comment</a></span></h3>
+    <div class="file-list-container">
+      <div class="file-list">
+        <ul>
+            <% @comments.each  do |comment| %>
+            <li>
+                <ul class="sub-items">
+                    <li><%= comment.comment %></li>
+                </ul>
+            </li>
+            <% end %>
+        </ul>
+      </div>
+    </div>
+</div>
+<div class="create_project_box_container"></div>
+<div class="create_project_box"></div>

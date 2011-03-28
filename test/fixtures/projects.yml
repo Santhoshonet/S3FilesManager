@@ -1,9 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  description: MyText
+  name: "cimb"
+  description: "some description"
 
 two:
-  name: MyString
-  description: MyText
+  name: nil
+  description: nil
+
+three:
+  name: "cimb"
+  description: "some description"
+
