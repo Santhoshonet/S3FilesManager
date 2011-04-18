@@ -5,6 +5,7 @@ class CreateDocuments < ActiveRecord::Migration
       t.text :description
       t.integer :project_id
       t.integer :category_id
+      t.integer :authentication_id
       t.timestamps
     end
   end

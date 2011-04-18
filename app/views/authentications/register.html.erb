@@ -1,7 +1,7 @@
 	<div id="login-box-container">
 		<div id="center">
 			<%= image_tag "Logo-Color.png" %>
-			<div id="login-box">
+			<div id="login-box" class="WarpShadow WLarge WLight">
 				<h1>Register an Account</h1>
                 <%= form_tag(:action => "createuser")  do |f| %>
                     <% unless @error.nil? %>

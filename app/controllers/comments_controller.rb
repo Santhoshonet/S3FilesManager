@@ -8,6 +8,8 @@ class CommentsController < ApplicationController
     @project_name = @document.project.name
     @client_name = @document.project.client.name
     @comments = Comment.find_all_by_document_id(id)
+    @history = @document.histories
+    @comment = Comment.new
   end
   # GET /comments/new
   # GET /comments/new.xml
@@ -18,12 +20,14 @@ class CommentsController < ApplicationController
     @client_name = @document.project.client.name
     render :layout => false
   end
+
   # POST /comments
   # POST /comments.xml
   def create
     @comment = Comment.new
     @comment.comment = params[:comment]
     @comment.document_id = params[:document_id]
+    puts "the current user id is " + session[:currentuser].to_s
     @comment.authentication_id = Authentication.find_by_id(session[:currentuser]).id
     if @comment.save
       flash[:notice] = 'Comment was successfully created.'

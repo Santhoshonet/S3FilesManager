@@ -10,7 +10,6 @@ AWS::S3::Base.establish_connection!(
     )
 
 ENV["mail_username"] = "support@getclaimed.com"
-
 ActionMailer::Base.smtp_settings = {
         :enable_starttls_auto => true,
         :address => "smtp.gmail.com",

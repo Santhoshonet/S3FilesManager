@@ -3,6 +3,8 @@ require 'digest/sha1'
 class Authentication < ActiveRecord::Base
 
   belongs_to :history
+  has_many :documents
+  has_many :comments
 
   validates_length_of :password, :within => 5..40 , :message => "Password length is too short!"
 

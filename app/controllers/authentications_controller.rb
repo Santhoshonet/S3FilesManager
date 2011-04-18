@@ -11,6 +11,11 @@ class AuthenticationsController < ApplicationController
     #end
   end
 
+  def logout
+    session[:currentuser] = nil
+    redirect_to "login"
+  end
+
   # POST /authentications
   # POST /authentications.xml
   def create
@@ -60,7 +65,7 @@ class AuthenticationsController < ApplicationController
       user = Authentication.find(:first, :conditions => "username = '#{params[:username]}'")
       unless user.nil?
         user.send_reset_password
-        @status = "An email has been send to you for resetting your getclaimed password."
+        @status = "An email has been send to you for resetting your Get Claimed password."
         render :success
       else
           @error = 'Invalid email address entered!'

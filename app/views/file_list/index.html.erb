@@ -11,9 +11,8 @@
                     <%= image_tag "icons3/document.png" %>
                     <a href='<%= AWS::S3::S3Object.url_for(document.name,S3SwfUpload::S3Config.bucket,:authenticated => false) %> '><%= document.name.split('/')[1] %></a>
                     <ul class="file-menu">
-                        <li><%= link_to "Add Comments", "/Comments/new/" + document.id.to_s, :class => "link_add_comments"  %></li>
-                        <li><%= link_to "#{document.comments.count().to_s} Comments", "/Commentlist/" + document.id.to_s %></li>
-                        <li><%= link_to "View History", "/histories/" + document.id.to_s %></li>
+                        <li><%= link_to "Add Comments", "/Comments/new/" + document.id.to_s, :class => "link_add_comments sub-menu"  %></li>
+                        <li><%= link_to "#{document.comments.count().to_s} Comments", "/Commentlist/" + document.id.to_s, :class => "sub-menu" %></li>
                     </ul>
                     <% #rescue %>
                     <% #end %>

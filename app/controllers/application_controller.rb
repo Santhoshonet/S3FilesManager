@@ -5,10 +5,15 @@ class ApplicationController < ActionController::Base
     if ENV['RAILS_ENV'] != 'test'
       if session[:currentuser].nil?
         redirect_to :controller => "authentications", :action => "new"
-        return false
       else
-        return true
+        if Authentication.find_by_id(session[:currentuser]).nil?
+          redirect_to :controller => "authentications", :action => "new"
+          return false
+        else
+          return true
+        end
       end
+      false
     else
         true
     end

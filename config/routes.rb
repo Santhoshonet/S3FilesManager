@@ -77,6 +77,7 @@ S3FileManager::Application.routes.draw do
   match '/register' , :controller => "authentications", :action => 'register'
   match '/createuser' , :controller => "authentications", :action => 'createuser'
   match 'login', :controller => "authentications", :action => "new"
+  match 'logout', :controller => "authentications", :action => "new"
   match 'forgotpassword', :controller => "authentications", :action => "forgotpassword"
   match 'resetpassword/:id', :controller => "authentications", :action => "resetpassword"
   match 'dashboard', :controller => "dashboard"

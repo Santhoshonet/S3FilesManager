@@ -61,9 +61,14 @@ class S3UploadsController < ApplicationController
       document.project_id = project.id
       document.category = category
       document.category_id = category.id
+      document.authentication = Authentication.find_by_id(session[:currentuser])
+      document.authentication_id = session[:currentuser]
       document.name = key
-      document.save
-      document.addhistory_new(session[:currentuser])
+      if document.save
+        document.addhistory_new(session[:currentuser])
+      else
+        puts document.errors.full_messages
+      end
     else
       document.addhistory_version(session[:currentuser])
     end

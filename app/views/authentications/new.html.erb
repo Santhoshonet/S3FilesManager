@@ -1,9 +1,8 @@
 	<div id="login-box-container">
 		<div id="center">
 			<%= image_tag "Logo-Color.png" %>
-			<div id="login-box">
+			<div id="login-box" class="WarpShadow WLarge WLight">
 				<h1>Login</h1>
-
                 <%= form_for(@authentication) do |f| %>
                     <% unless @error.nil? %>
 				    <div class="error">
