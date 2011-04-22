@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new
     @comment.comment = params[:comment]
     @comment.document_id = params[:document_id]
-    puts "the current user id is " + session[:currentuser].to_s
+    #puts "the current user id is " + session[:currentuser].to_s
     @comment.authentication_id = Authentication.find_by_id(session[:currentuser]).id
     if @comment.save
       flash[:notice] = 'Comment was successfully created.'

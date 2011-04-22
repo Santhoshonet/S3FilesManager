@@ -5,7 +5,7 @@ class AuthenticationsController < ApplicationController
     @error = nil
     @authentication = Authentication.new
     #if Authentication.find(:all).length > 0
-    #  session[:currentuser] = Authentication.find(:first)
+    #  session[:currentuser] = Authentication.find(:first).id
     #  redirecttohome
     #  return
     #end
@@ -20,7 +20,9 @@ class AuthenticationsController < ApplicationController
   # POST /authentications.xml
   def create
     @error = nil
-    if session[:currentuser] = Authentication.authenticate(params[:username], params[:password])
+    auth = Authentication.authenticate(params[:username], params[:password])
+    unless auth.nil?
+      session[:currentuser] = auth.id
       redirecttohome
       return
     end
