@@ -2,73 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f69856-4421-4592-9841-4bdedae1ed2d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/Logo-Color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/MarbleNoisy0033_2_S.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/texture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/textureV2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/title-bottom-border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/authentications/forgotpassword.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/authentications/resetpassword.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/authentications/success.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/clients.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/comments.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/dashboard.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/googleanalytics.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/header.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/history.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/projects.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/notifications/forgot_password.text.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crossdomain.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/crossdomain.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/authentication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/handheld.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/shadows.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/s3-swf-upload-plugin/crossdomain.xml" />
-      <change type="DELETED" beforePath="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\app\views\projects\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\app\views\projects\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\app\views\projects\show.html.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/S3FileManager.iml" afterPath="$PROJECT_DIR$/.idea/S3FileManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logo.png" afterPath="$PROJECT_DIR$/public/images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s3-swf-upload-plugin" afterPath="$PROJECT_DIR$/s3-swf-upload-plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/file_list_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/file_list_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/s3_uploads_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/s3_uploads_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/authentication.rb" afterPath="$PROJECT_DIR$/app/models/authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/new.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/register.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/register.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/file_list/index.html.erb" afterPath="$PROJECT_DIR$/app/views/file_list/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/file_list/upload.html.erb" afterPath="$PROJECT_DIR$/app/views/file_list/upload.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/authentications.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/authentications.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/file_list.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/file_list.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/new.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/amazon_s3.yml" afterPath="$PROJECT_DIR$/config/amazon_s3.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110124071425_create_authentications.rb" afterPath="$PROJECT_DIR$/db/migrate/20110124071425_create_authentications.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110221124212_create_projects.rb" afterPath="$PROJECT_DIR$/db/migrate/20110221124212_create_projects.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/dashboard.js" afterPath="$PROJECT_DIR$/public/javascripts/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/filelist.js" afterPath="$PROJECT_DIR$/public/javascripts/filelist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s3-swf-upload-plugin/flex_src/src/com/elctech/S3UploadRequest.as" afterPath="$PROJECT_DIR$/s3-swf-upload-plugin/flex_src/src/com/elctech/S3UploadRequest.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s3fileslist.bak" afterPath="$PROJECT_DIR$/s3fileslist.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.tmp" afterPath="$PROJECT_DIR$/script.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/authentications.yml" afterPath="$PROJECT_DIR$/test/fixtures/authentications.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/projects.yml" afterPath="$PROJECT_DIR$/test/fixtures/projects.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/dashboard_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/dashboard_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/file_list_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/file_list_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/projects_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/projects_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/project_test.rb" afterPath="$PROJECT_DIR$/test/unit/project_test.rb" />
     </list>
     <ignored path="S3FileManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,35 +31,7 @@
     <fileColor scope="Non-Project Files" color="ffffe4" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/history/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="12" selection-start="165" selection-end="165" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="281" selection-end="281" vertical-scroll-proportion="0.32697546">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -155,22 +65,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/header.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/authentications.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/file_list/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/projects.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/dashboard.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/clients.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/comments.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/comments/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/authentications/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/authentications/register.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/file_list.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/history.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/history/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/models/authentication.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110304070928_create_documents.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/s3_uploads_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/document.rb" />
+        <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/file_list/index.html.erb" />
+        <option value="$PROJECT_DIR$/script.tmp" />
+        <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
       </list>
     </option>
   </component>
@@ -207,6 +117,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,97 +138,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="history" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S3FileManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,11 +154,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\public\images\icons3" />
       <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\public\stylesheets" />
       <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\public" />
       <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\s3-swf-upload-plugin" />
       <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager" />
-      <recent name="C:\Users\Santhosh\Desktop\MyWorks\Contract Right _ S3FilesManager\S3FileManager\public\images" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: S3FileManager">
@@ -412,7 +236,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs>
-        <env name="RAILS_ENV" value="test" />
+        <env name="RAILS_ENV" value="development" />
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
@@ -728,9 +552,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2157969" sideWeight="0.22913907" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18688293" sideWeight="0.5218543" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18688293" sideWeight="0.24768212" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4781457" sideWeight="0.99754" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7523179" sideWeight="0.99754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -774,116 +598,84 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/googleanalytics.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/s3_uploads_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/dashboard.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-8.916667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/authentications.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-10.791667">
-          <folding />
-        </state>
+        <state line="67" column="60" selection-start="2526" selection-end="2526" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/file_list/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="259" selection-end="282" vertical-scroll-proportion="0.18181819">
-          <folding />
-        </state>
+        <state line="23" column="35" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.7986111" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/clients.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/file_list_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.78134114">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.25586355" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/file_list/upload.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="68" selection-start="360" selection-end="360" vertical-scroll-proportion="0.27272728">
-          <folding />
-        </state>
+        <state line="8" column="8" selection-start="304" selection-end="304" vertical-scroll-proportion="0.2777778" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clients/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="42" selection-start="321" selection-end="735" vertical-scroll-proportion="0.5030488" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/comments.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/notifications/forgot_password.text.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="47" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.65014577">
-          <folding />
-        </state>
+        <state line="23" column="10" selection-start="2" selection-end="1358" vertical-scroll-proportion="0.56188923" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/file_list.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/mailers/notifications.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.5131195">
-          <folding />
-        </state>
+        <state line="5" column="23" selection-start="157" selection-end="157" vertical-scroll-proportion="0.11210762" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/authentication.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="23" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.5945122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="89" selection-start="2215" selection-end="2390" vertical-scroll-proportion="0.5341246" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authentications/forgotpassword.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="0" selection-end="1159" vertical-scroll-proportion="0.28481013" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authentications/success.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="0" selection-end="296" vertical-scroll-proportion="0.23734178" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authentications/resetpassword.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="0" selection-end="926" vertical-scroll-proportion="0.5933544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="92" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.32697546">
-          <folding />
-        </state>
+        <state line="84" column="14" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.64972526" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="66" selection-start="351" selection-end="351" vertical-scroll-proportion="0.393586">
-          <folding />
-        </state>
+        <state line="5" column="7" selection-start="19" selection-end="187" vertical-scroll-proportion="0.11127596" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clients/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/clients.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="254" selection-end="277" vertical-scroll-proportion="0.34985423">
-          <folding />
-        </state>
+        <state line="13" column="53" selection-start="668" selection-end="668" vertical-scroll-proportion="0.27698863" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/history.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="661" selection-end="661" vertical-scroll-proportion="-0.53061223">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/history/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="165" selection-end="165" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="281" selection-end="281" vertical-scroll-proportion="0.32697546">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>

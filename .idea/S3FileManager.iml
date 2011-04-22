@@ -80,6 +80,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.9.0, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/pg-0.9.0-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] test-unit (v2.1.2, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/test-unit-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.3, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.11.0pre229, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/pg-0.11.0pre229-x86-mingw32)" level="application" />
   </component>
 </module>
 
